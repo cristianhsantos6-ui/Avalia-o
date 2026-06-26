@@ -4,7 +4,7 @@ const listaDeLotes = [];
 // Função auxiliar apenas para formatação visual de moeda
 function formatarMoeda(valor) {
     if (typeof valor === "string") return valor; // Retorna "Isento"
-    return valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    return valor.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
 }
 
 // Estrutura de Repetição para atualizar a tabela na tela
@@ -36,8 +36,8 @@ document.getElementById("formLote").addEventListener("submit", function(event) {
     const comprimento = parseFloat(document.getElementById("Comprimento").value);
     const largura = parseFloat(document.getElementById("Largura").value);
 
-    // CHAMADA DAS FUNÇÕES que estão no arquivo calculos.js
-    const area = calcularArea(comprimento, largura);
+    // CHAMADA DAS FUNÇÕES que estão no arquivo calculo.js
+    const area = calculoArea(comprimento, largura);
     const valorBase = calcularValorBase(area);
     const valorAdicional = calcularAdicional(valorBase);
 
