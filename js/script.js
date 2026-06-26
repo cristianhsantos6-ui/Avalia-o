@@ -33,8 +33,8 @@ document.getElementById("formLote").addEventListener("submit", function(event) {
     event.preventDefault();
 
     const descricao = document.getElementById("descricao").value;
-    const comprimento = parseFloat(document.getElementById("comprimento").value);
-    const largura = parseFloat(document.getElementById("largura").value);
+    const comprimento = parseFloat(document.getElementById("Comprimento").value);
+    const largura = parseFloat(document.getElementById("Largura").value);
 
     // CHAMADA DAS FUNÇÕES que estão no arquivo calculos.js
     const area = calcularArea(comprimento, largura);
