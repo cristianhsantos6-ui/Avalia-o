@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de lotes</title>
+    <style>
+        
+
+    </style>
+
+    <script src="js/script.js"
+    defer></script>
+</head>
+<body>
+    <h2>Cadastro de Lotes</h2>
+    
+    <form id="formLote">
+        <div class="form-group">
+            <label for="descricao">Descrição (Quadra e Lote):</label>
+            <input type="text" id="descricao" required placeholder="Ex: Quadra 01 - Lote 02">
+        </div>
+        <div class="form-group">
+            <label for="comprimento">Comprimento (em metros)</label>
+            <input type="number" id="comprimento" step="0.01"required placeholder="EX:20">
+        </div>
+        <div class="form-group">
+            <label for="largura">Largura (em metros)</label>
+            <input type="number" id="largura" step="0.01"required placeholder="EX:12">
+        </div>
+        <button type="submit">Cadastrar lote</button>
+    </form>
+
+    <h2>Lista de Lotes Cadastros</h2>
+    <table>
+        <thead>
+            <tr>
+                <tr>Descrição</tr>
+
+                <tr>Comprimento</tr>
+                <tr>Largura</tr>
+                <tr>Àrea (m2)</tr>
+                <tr>Valor do lote</tr>
+                <tr>Valor Adicional</tr>
+            </tr>
+        </thead>
+        <tbody id="listaLotes">
+            <!-- Os dados inseridos via JS aparecerão aqui-->
+        </tbody>
+    </table>
+</body>
+</html>
